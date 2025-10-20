@@ -14,14 +14,19 @@
     <style>
         /* 🌷 Style riêng cho dòng chúc */
         .happy-woman-day {
-            font-family: 'Baloo 2', cursive;
-            font-size: 36px;
-            color: #ff66b3;
-            text-align: center;
-            margin-top: 5px;
-            text-shadow: 0 0 12px #ffd6e0, 0 0 25px #ffb3d9;
-            animation: sparkle 2s infinite ease-in-out;
-        }
+    position: fixed;
+    top: 0; /* 👈 Cho chữ lên sát mép trên */
+    left: 50%; /* 👈 Canh giữa ngang */
+    transform: translateX(-50%); /* 👈 Giữ chính giữa hoàn hảo */
+    z-index: 9999; /* 👈 Đảm bảo nằm trên mọi lớp khác */
+    font-family: 'Baloo 2', cursive;
+    font-size: 36px;
+    color: #ff66b3;
+    text-align: center;
+    text-shadow: 0 0 12px #ffd6e0, 0 0 25px #ffb3d9;
+    animation: sparkle 2s infinite ease-in-out;
+}
+
 
         /* ✨ Hiệu ứng nhấp nháy nhẹ */
         @keyframes sparkle {
